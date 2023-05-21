@@ -11,34 +11,211 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
-    Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k
-    Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today
-    Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
-    Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
+    <main>
+      <section class="header">
+        <div class="header-info">
+          <div><h1 class="header-title">Social Media Dashboard</h1></div>
+          <div class="header-followers">Total Followers: 23,004</div>
+        </div>
+        <div class="darkmode">
+          <div class="darkmode-label">Dark Mode</div>
+        </div>
+      </section>
+      <section class="main-row">
+        <div class="main-info facebook-info">
+          <div class="social-line facebook-line"></div>
+          <div class="social-user">
+            <img
+              class="social-icon"
+              src="images/icon-facebook.svg"
+              alt="facebook icon"
+            />
+            <p>@nathanf</p>
+          </div>
+          <div class="social-number">1987</div>
+          <div class="social-followers">followers</div>
+          <div class="social-movement">
+            <img src="images/icon-up.svg" alt="arrow up" />
+            <p>12 Today</p>
+          </div>
+        </div>
+        <div class="main-info twitter-info">
+          <div class="social-line twitter-line"></div>
+          <div class="social-user">
+            <img
+              class="social-icon"
+              src="images/icon-twitter.svg"
+              alt="twitter icon"
+            />
+            <p>@nathanf</p>
+          </div>
+          <div class="social-number">1044</div>
+          <div class="social-followers">followers</div>
+          <div class="social-movement">
+            <img src="images/icon-up.svg" alt="arrow up" />
+            <p>99 Today</p>
+          </div>
+        </div>
+        <div class="main-info instagram-info">
+          <div class="social-line instagram-line"></div>
+          <div class="social-user">
+            <img
+              class="social-icon"
+              src="images/icon-instagram.svg"
+              alt="instagram icon"
+            />
+            <p>@realnathanf</p>
+          </div>
+          <div class="social-number">11k</div>
+          <div class="social-followers">followers</div>
+          <div class="social-movement">
+            <img src="images/icon-up.svg" alt="arrow up" />
+            <p>1099 Today</p>
+          </div>
+        </div>
+        <div class="main-info youtube-info">
+          <div class="social-line youtube-line"></div>
+          <div class="social-user">
+            <img
+              class="social-icon"
+              src="images/icon-youtube.svg"
+              alt="youtube icon"
+            />
+            <p>Nathan F.</p>
+          </div>
+          <div class="social-number">8239</div>
+          <div class="social-followers">followers</div>
+          <div class="social-movement social-movement--down">
+            <img src="images/icon-down.svg" alt="arrow down" />
+            <p>144 Today</p>
+          </div>
+        </div>
+      </section>
+      <section class="overview">
+        <div class="overview-title">Overview - Today</div>
+        <div class="overview-container">
+          <div class="overview-item">
+            <div class="overview-upper">
+              <p>Page Views</p>
+              <img src="images/icon-facebook.svg" alt="facebook icon" />
+            </div>
+            <div class="overview-lower">
+              <div class="overview-number">87</div>
+              <div class="overview-percentage">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <p>3%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-upper">
+              <p>Likes</p>
+              <img src="images/icon-facebook.svg" alt="facebook icon" />
+            </div>
+            <div class="overview-lower">
+              <div class="overview-number">52</div>
+              <div class="overview-percentage social-percentage--down">
+                <img src="images/icon-down.svg" alt="arrow down" />
+                <p>2%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-upper">
+              <p>Likes</p>
+              <img src="images/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="overview-lower">
+              <div class="overview-number">5462</div>
+              <div class="overview-percentage">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <p>2257%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-upper">
+              <p>Profile Views</p>
+              <img src="images/icon-instagram.svg" alt="instagram icon" />
+            </div>
+            <div class="overview-lower">
+              <div class="overview-number">52k</div>
+              <div class="overview-percentage">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <p>1375%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-upper">
+              <p>Retweets</p>
+              <img src="images/icon-twitter.svg" alt="twitter icon" />
+            </div>
+            <div class="overview-lower">
+              <div class="overview-number">117</div>
+              <div class="overview-percentage">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <p>303%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-upper">
+              <p>Likes</p>
+              <img src="images/icon-twitter.svg" alt="twitter icon" />
+            </div>
+            <div class="overview-lower">
+              <div class="overview-number">507</div>
+              <div class="overview-percentage">
+                <img src="images/icon-up.svg" alt="arrow up" />
+                <p>553%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-upper">
+              <p>Likes</p>
+              <img src="images/icon-youtube.svg" alt="youtube icon" />
+            </div>
+            <div class="overview-lower">
+              <div class="overview-number">107</div>
+              <div class="overview-percentage social-percentage--down">
+                <img src="images/icon-down.svg" alt="arrow down" />
+                <p>19%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="overview-upper">
+              <p>Total Views</p>
+              <img src="images/icon-youtube.svg" alt="youtube icon" />
+            </div>
+            <div class="overview-lower">
+              <div class="overview-number">1407</div>
+              <div class="overview-percentage social-percentage--down">
+                <img src="images/icon-down.svg" alt="arrow down" />
+                <p>12%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="rectangle-bgd"></div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
     <script src="script.js"></script>
   </body>
 </html>

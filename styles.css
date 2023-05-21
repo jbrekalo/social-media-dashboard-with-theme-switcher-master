@@ -1,0 +1,395 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+## Family: https://fonts.google.com/specimen/Inter
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font size (Overview Card Headings): 14px
+
+- Font weights
+Default: 400
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+- 0.5px
+- 0.75px
+
+--- 02 COLORS
+
+### Primary
+
+- Lime Green: hsl(163, 72%, 41%)
+- Bright Red: hsl(356, 69%, 56%)
+
+- Facebook: hsl(208, 92%, 53%)
+- Twitter: hsl(203, 89%, 53%)
+- Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+- YouTube: hsl(348, 97%, 39%)
+
+#### Dark Theme
+
+- Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+
+#### Light Theme
+
+- Toggle: hsl(230, 22%, 74%)
+
+### Neutral
+
+#### Dark Theme
+
+- Very Dark Blue (BG): hsl(230, 17%, 14%)
+- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+- Desaturated Blue (Text): hsl(228, 34%, 66%)
+- White (Text): hsl(0, 0%, 100%)
+
+#### Light Theme
+
+- White (BG): hsl(0, 0%, 100%)
+- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+- Very Dark Blue (Text): hsl(230, 17%, 14%)
+
+
+--- 03 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 04 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+--- 05 LAYOUT
+
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+
+:root {
+  /* Primary */
+  --lime-green: #1db489;
+  --bright-red: #dc414c;
+
+  --facebook: #198ff5;
+  --twitter: #1ca0f2;
+  --instagram-1: #fdc468;
+  --instagram-2: #df4996;
+  --youTube: #c4032a;
+
+  /* Toggle dark */
+  --toggle-dark: linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
+
+  /* Toggle light */
+  --toggle-light: #aeb3cb;
+
+  /* Dark theme */
+  --very-dark-blue-BG: #1e202a;
+  --very-dark-blue-BG-pattern: #1f212e;
+  --dark-desaturated-blue: #252a41;
+  --desaturated-blue: #8b97c6;
+  -white-text: #ffffff;
+
+  /* Light theme */
+  --white-BG: #ffffff;
+  --very-pale-blue: #f5f7ff;
+  --light-grayish-blue: #f0f2fa;
+  --dark-grayish-blue: #63687e;
+  --very-dark-blue: #1e202a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-BG);
+  max-width: 1440px;
+  height: 100vh;
+
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 111rem;
+  margin: 0 auto;
+}
+
+.rectangle-bgd {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 24.4rem;
+  border: none;
+  border-radius: 0 0 2rem 2rem;
+  background-color: var(--very-pale-blue);
+}
+
+.header {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  margin-top: 3.6rem;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+  color: var(--very-dark-blue);
+
+  margin-bottom: 0.3rem;
+}
+
+.header-followers {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+}
+
+.darkmode {
+  display: flex;
+  align-items: center;
+}
+
+.darkmode-label {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+}
+
+.main-row {
+  display: flex;
+  justify-content: space-between;
+  height: 21.6rem;
+  margin-top: 4.6rem;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: start;
+
+  width: 25.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  background-color: var(--light-grayish-blue);
+}
+
+.social-line {
+  height: 0.4rem;
+  width: 25.5rem;
+  margin-bottom: 3.2rem;
+}
+
+.facebook-line {
+  background-color: var(--facebook);
+}
+
+.twitter-line {
+  background-color: var(--twitter);
+}
+
+.instagram-line {
+  background: linear-gradient(
+    90deg,
+    var(--instagram-1) 0%,
+    var(--instagram-2) 100%
+  );
+}
+
+.youtube-line {
+  background-color: var(--youTube);
+}
+
+.social-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.8rem;
+}
+
+.social-icon {
+  width: 2rem;
+}
+
+.social-user p {
+  margin-left: 0.8rem;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+}
+
+.social-number {
+  font-size: 5.6rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+
+  margin-bottom: 0.9rem;
+}
+
+.social-followers {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--dark-grayish-blue);
+
+  margin-bottom: 2.5rem;
+}
+
+.social-movement {
+  display: flex;
+}
+
+.social-movement img {
+  margin: auto;
+  margin-right: 0.4rem;
+}
+
+.social-movement p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: var(--lime-green);
+}
+
+.social-movement--down p {
+  color: var(--bright-red);
+}
+
+.overview {
+  margin-top: 4.6rem;
+}
+
+.overview-title {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+}
+
+.overview-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2.4rem 3rem;
+
+  margin-top: 2.4rem;
+  margin-bottom: 7.5rem;
+}
+
+.overview-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: 12.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  background-color: var(--light-grayish-blue);
+}
+
+.overview-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  width: 20rem;
+
+  margin-top: 2.6rem;
+}
+
+.overview-upper p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+}
+
+.overview-upper img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.overview-lower {
+  display: flex;
+  justify-content: space-between;
+  height: 3.9rem;
+  width: 20rem;
+
+  margin-top: 2.1rem;
+}
+
+.overview-number {
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.overview-percentage {
+  position: absolute;
+  right: 3.1rem;
+  bottom: 2.4rem;
+  display: flex;
+  height: 1.5rem;
+}
+
+.overview-percentage img {
+  margin: auto;
+}
+
+.overview-percentage p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: var(--lime-green);
+
+  margin-left: 0.2rem;
+}
+
+.social-percentage--down p {
+  color: var(--bright-red);
+}
