@@ -497,9 +497,7 @@ main {
   }
 
   .overview {
-    width: 100%;
-    margin-top: 4.6rem;
-    padding: 0 8rem;
+    margin: 4.6rem auto 0 auto;
   }
 
   .overview-title {
@@ -511,7 +509,7 @@ main {
 
   .overview-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 25.5rem 25.5rem;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
     margin-top: 2.4rem;
